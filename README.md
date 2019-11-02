@@ -34,7 +34,7 @@ didalam editor ada beberapa menu, yaitu:
   
 ## 2. Contoh
 ### Membuat Tabel
-klik resources --> views --> 
+klik resources --> views --> buat file, misal nama file nya "tabel" --> kemudian ketikan seperti di bawah ini
 ```html
 <body>
    <table>
@@ -52,4 +52,15 @@ klik resources --> views -->
 </body>
 </html>
 ```
-perintah diatas adalah  untuk membuat table dengan tiga kolom, dengan kolom pertama "No",
+Perintah diatas adalah  untuk membuat table dengan tiga kolom, dengan kolom pertama "No",kolom ke-2 "Nama", dan yang ke-3 "Foto"
+Untuk melihat hasil dari html diatas 
+- aktifkan serve nya terlebih dulu
+  ```sh
+  php artisan serve
+  ```
+- buat route untuk memanggil file "table"
+  ```sh
+  Route::get ('/tabel',function(){
+    return view ('tabel');
+    });
+  ```
