@@ -34,7 +34,7 @@ didalam editor ada beberapa menu, yaitu:
   
 ## 2. Contoh
 ### Membuat Tabel
-klik resources --> views --> buat file, misal nama file nya "tabel" --> kemudian ketikan seperti di bawah ini
+klik resources --> views --> buat file, misal nama file nya **tabel.blade.php** --> kemudian ketikan seperti di bawah ini
 ```html
 <body>
    <table>
@@ -58,8 +58,8 @@ Untuk melihat hasil dari html diatas
   ```sh
   php artisan serve
   ```
-- buat route untuk memanggil file "table"
-  ```sh
+- buat route baru di file **routes/web.php** untuk memanggil file **resources/views/tabel.blade.php** 
+  ```php
   Route::get ('/tabel',function(){
     return view ('tabel');
     });
