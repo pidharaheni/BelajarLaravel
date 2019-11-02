@@ -7,17 +7,35 @@ $ composer create-project --prefer-dist laravel/laravel blog
 ```
 kemudian buka editor, disini saya menggunakan visual studio code.
 didalam editor ada beberapa menu, yaitu:
-  - app
-  - bootsrap
-  - config
-  - database
-  - public
-  - resources, dll
+
+```sh
+.
+├── app
+├── artisan
+├── bootstrap
+├── composer.json
+├── composer.lock
+├── config
+├── database
+├── package.json
+├── phpunit.xml
+├── public
+├── readme.md
+├── resources
+├── routes
+├── server.php
+├── storage
+├── tests
+├── vendor
+└── webpack.mix.js
+
+10 directories, 8 files
+```
   
 ## 2. Contoh
 ### Membuat Tabel
 klik resources --> views --> 
-```sh
+```html
 <body>
    <table>
     <tr>
