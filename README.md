@@ -64,3 +64,5 @@ Untuk melihat hasil dari html diatas
     return view ('tabel');
     });
   ```
+- kemudian buka browser, ketikan url 
+  http://localhost:8000/tabel
