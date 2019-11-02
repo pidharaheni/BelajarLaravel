@@ -66,3 +66,30 @@ Untuk melihat hasil dari html diatas
   ```
 - kemudian buka browser, ketikan url 
   http://localhost:8000/tabel
+
+Dari di atas bisa dilihat bahwa tabel yang dibuat masih berantakan,untuk merapikan tabel di atas maka bisa ditambahkan **css** di file **tabel.blade.php**
+```css
+   table {
+        width: 100%;
+        /* ini digunakan untuk menampilkan tabel dengan lebar sesuai halaman browser */
+    } 
+    table,th, td {
+        border: 1px solid brown;
+    /* perintah ini digunakan untuk memberikan border 1 pixel pada garis kolom dan baris, dengan jenis garis solid dan warna coklat */
+        border-collapse: collapse;
+    /*perintah ini digunakan untuk menyaatukan border  */
+    }
+    th, td {
+        padding: 5px;
+    /*perintah ini untuk memberikan ruang antara content dengan border  */
+    }
+    th, td {
+        text-align: center;
+    /* perintah ini digunakan untuk mengatur text di tengah */
+    }
+    .teks-kiri {
+        text-align: left;
+    /*perintah ini digunakan untuk mengatur teks di  sebelah kiri  */
+    /* bedanya dengan perintah di atas adalah, perintah ini hanya untuk mengatur teks di kolom kedua  */
+    }
+```
