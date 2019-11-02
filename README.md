@@ -5,3 +5,4 @@ Disini saya akan mencoba install laravel dengan lemabr kerja "absensi"
 ```sh
 $ composer create-project --prefer-dist laravel/laravel absensi
 ```
+kemudian buka editor, disini saya menggunakan visual studio code.
